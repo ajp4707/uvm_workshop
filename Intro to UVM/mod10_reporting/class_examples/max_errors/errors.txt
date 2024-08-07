@@ -1,0 +1,5 @@
+UVM_ERROR ./bench/comparator.svh(32) @ 1731: uvm_test_top.t_env.cmp [run] ERROR expected: addr: 0003 data: 6465 actual:addr: 0003 data: 6466
+UVM_ERROR ./bench/comparator.svh(32) @ 3271: uvm_test_top.t_env.cmp [run] ERROR expected: addr: 0003 data: 2ee0 actual:addr: 0003 data: 2ee1
+UVM_ERROR ./bench/comparator.svh(32) @ 4011: uvm_test_top.t_env.cmp [run] ERROR expected: addr: 0003 data: 2e14 actual:addr: 0003 data: 2e15
+UVM_ERROR ./bench/comparator.svh(32) @ 4251: uvm_test_top.t_env.cmp [run] ERROR expected: addr: 0003 data: 6c7c actual:addr: 0003 data: 6c7d
+UVM_ERROR ./bench/comparator.svh(32) @ 4291: uvm_test_top.t_env.cmp [run] ERROR expected: addr: 0003 data: 6c7c actual:addr: 0003 data: 6c7d

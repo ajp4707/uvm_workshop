@@ -1,0 +1,2 @@
+UVM_WARNING verbosity.sv(17) @ 0: uvm_test_top [PRINTER] This is a PRINTER WARNING
+UVM_ERROR verbosity.sv(21) @ 0: uvm_test_top [PRINTER] This is a PRINTER ERROR

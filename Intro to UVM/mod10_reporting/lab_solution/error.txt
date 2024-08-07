@@ -1,0 +1,21 @@
+----------------------------------------------------------------
+UVM-1.1b
+(C) 2007-2012 Mentor Graphics Corporation
+(C) 2007-2012 Cadence Design Systems, Inc.
+(C) 2006-2012 Synopsys, Inc.
+(C) 2011-2012 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_ERROR src/comparator.svh(32) @ 111: uvm_test_top.env.comp [run] FAILED: Expected: data: e9   Actual: data: eb
+UVM_ERROR src/comparator.svh(32) @ 331: uvm_test_top.env.comp [run] FAILED: Expected: data: a2   Actual: data: a5
+UVM_ERROR src/comparator.svh(32) @ 391: uvm_test_top.env.comp [run] FAILED: Expected: data: a3   Actual: data: a8

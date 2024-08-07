@@ -1,0 +1,1 @@
+UVM_ERROR verbosity.sv(20) @ 0: uvm_test_top [MSG] This is an ERROR
