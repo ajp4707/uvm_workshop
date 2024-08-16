@@ -220,7 +220,7 @@ Resolution = ps
 UserTimeUnit = default
 
 ; Default run length
-RunLength = 100 ps
+RunLength = 100 ns
 
 ; Maximum iterations that can be run without advancing simulation time
 IterationLimit = 5000
@@ -410,11 +410,13 @@ ConcurrentFileLimit = 40
 Project_Version = 6
 Project_DefaultLib = work
 Project_SortMethod = unused
-Project_Files_Count = 2
-Project_File_0 = C:/Users/ajp47/Documents/uvm_workshop/Intro to UVM/mod01_sv_for_vhdlers/DUT.sv
-Project_File_P_0 = cover_toggle 0 vlog_protect 0 file_type systemverilog group_id 0 cover_exttoggle 0 cover_nofec 0 cover_cond 0 vlog_1995compat SV vlog_nodebug 0 folder {Top Level} cover_branch 0 cover_fsm 0 last_compile 1723052158 vlog_noload 0 cover_excludedefault 0 vlog_enable0In 0 vlog_disableopt 0 cover_covercells 0 voptflow 1 cover_optlevel 3 vlog_showsource 0 vlog_hazard 0 toggle - vlog_0InOptions {} ood 0 cover_noshort 0 vlog_upper 0 compile_to work vlog_options {} compile_order 1 cover_expr 0 dont_compile 0 cover_stmt 0
-Project_File_1 = C:/Users/ajp47/Documents/uvm_workshop/Intro to UVM/mod01_sv_for_vhdlers/top.sv
-Project_File_P_1 = cover_toggle 0 vlog_protect 0 file_type systemverilog group_id 0 cover_exttoggle 0 cover_nofec 0 cover_cond 0 vlog_1995compat SV vlog_nodebug 0 folder {Top Level} cover_branch 0 cover_fsm 0 last_compile 1723149735 vlog_noload 0 cover_excludedefault 0 vlog_enable0In 0 vlog_disableopt 0 cover_covercells 0 voptflow 1 cover_optlevel 3 vlog_showsource 0 vlog_hazard 0 toggle - vlog_0InOptions {} ood 0 cover_noshort 0 vlog_upper 0 compile_to work vlog_options {} compile_order 0 cover_expr 0 dont_compile 0 cover_stmt 0
+Project_Files_Count = 3
+Project_File_0 = C:/Users/ajp47/Documents/Code/uvm_workshop/Intro to UVM/mod01_sv_for_vhdlers/lab_solution/DUT.sv
+Project_File_P_0 = cover_toggle 0 vlog_protect 0 file_type systemverilog group_id 0 cover_exttoggle 0 cover_nofec 0 cover_cond 0 vlog_1995compat SV vlog_nodebug 0 folder {Top Level} cover_branch 0 cover_fsm 0 last_compile 1723576703 vlog_noload 0 cover_excludedefault 0 vlog_enable0In 0 vlog_disableopt 0 cover_covercells 0 voptflow 1 cover_optlevel 3 vlog_showsource 0 vlog_hazard 0 toggle - vlog_0InOptions {} ood 0 cover_noshort 0 vlog_upper 0 compile_to work vlog_options {} compile_order 1 cover_expr 0 dont_compile 0 cover_stmt 0
+Project_File_1 = C:/Users/ajp47/Documents/Code/uvm_workshop/Intro to UVM/mod01_sv_for_vhdlers/lab_solution/top.sv
+Project_File_P_1 = cover_toggle 0 vlog_protect 0 file_type systemverilog group_id 0 cover_exttoggle 0 cover_nofec 0 cover_cond 0 vlog_1995compat SV vlog_nodebug 0 folder {Top Level} cover_branch 0 cover_fsm 0 last_compile 1723576703 vlog_noload 0 cover_excludedefault 0 vlog_enable0In 0 vlog_disableopt 0 cover_covercells 0 voptflow 1 cover_optlevel 3 vlog_showsource 0 vlog_hazard 0 toggle - vlog_0InOptions {} ood 0 cover_noshort 0 vlog_upper 0 compile_to work vlog_options {} compile_order 2 cover_expr 0 dont_compile 0 cover_stmt 0
+Project_File_2 = C:/Users/ajp47/Documents/Code/uvm_workshop/Intro to UVM/mod01_sv_for_vhdlers/lab_solution/clear_DUT.sv
+Project_File_P_2 = cover_toggle 0 vlog_protect 0 file_type systemverilog group_id 0 cover_exttoggle 0 cover_nofec 0 cover_cond 0 vlog_1995compat SV vlog_nodebug 0 folder {Top Level} cover_branch 0 cover_fsm 0 last_compile 1723576703 vlog_noload 0 cover_excludedefault 0 vlog_enable0In 0 vlog_disableopt 0 cover_covercells 0 voptflow 1 cover_optlevel 3 vlog_showsource 0 vlog_hazard 0 toggle - vlog_0InOptions {} ood 0 cover_noshort 0 vlog_upper 0 compile_to work vlog_options {} compile_order 0 cover_expr 0 dont_compile 0 cover_stmt 0
 Project_Sim_Count = 0
 Project_Folder_Count = 0
 Echo_Compile_Output = 0

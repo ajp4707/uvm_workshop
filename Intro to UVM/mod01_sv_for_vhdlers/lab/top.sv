@@ -32,57 +32,58 @@ module top;
 		@ (posedge clk);
 		@ (negedge clk);
 		repeat(200) begin
-			inc = 1;
-			predicted_q ++;
+			inc <= 1;
 			@(posedge clk);
-			#1ns
-			assert(q == predicted_q);
+			predicted_q ++;
 		end
-		inc = 0;
+		inc <= 0;
 		
 		@ (posedge clk);
 		@ (negedge clk);
 		// verify reset works
-		rst_n = 0;
-		#1ns assert(q == predicted_q); // verify that rst is synch, not asynch
+		rst_n <= 0;
 		@ (posedge clk);
-		#1ns assert (q == 0);
+		predicted_q = 'h00;
 		@ (posedge clk);
-		rst_n = 1;
+		rst_n <= 1;
 		
 		// verify load
 		@ (posedge clk);
-		data_in = 'hF0;
-		ld = 1;
+		data_in <= 'hF0;
+		ld <= 1;
 		repeat(2) begin
 			@ (posedge clk);
-			#1ns assert(q == data_in);
+			predicted_q <= data_in;
 		end
 		
 		// ld has precedence over inc
-		inc = 1;
+		inc <= 1;
 		repeat(2) begin
 			@ (posedge clk);
-			#1ns assert(q == data_in);
+			predicted_q <= data_in;
 		end
-		inc = 0;
+		inc <= 0;
 		
 		// check that inc wraps to 0
 		@(posedge clk);
-		data_in = 'hFF;
-		ld = 1;
+		data_in <= 'hFF;
+		ld <= 1;
 		@(posedge clk);
-		#1ns assert(q == data_in);
-		inc = 1;
+		predicted_q <= data_in;
+		inc <= 1;
+		ld <= 0;
 		@(posedge clk);
-		#1ns assert(q == 0);
+		predicted_q <= 'h00;
 
 		$display("Time: %t - Simulation Complete", $time);
 		$stop;
 	end
 	
 	
-	// verfiy load works
+	always begin
+		@(negedge clk)
+		assert(q == predicted_q);
+	end
    
 endmodule // top
 
