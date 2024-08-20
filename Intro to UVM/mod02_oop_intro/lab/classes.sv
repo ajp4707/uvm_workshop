@@ -15,11 +15,32 @@ typedef enum {ld, inc, op} op_t;
 //
 //       $sformat(s,"data %2h   op: %3s", <your data_t name> ,<your op_t name>);
 
+class ctr_op_t;
+   rand data_t my_data;
+   rand op_t my_op;
+
+   function new(data_t d = 0, op_t o = op);
+      my_data = d;
+      my_op = o;
+   endfunction
+   
+   function string convert2string;
+      string s;
+      return $sformat(s, "data %2h  op: %3s", my_data, my_op);
+   endfunction 
+
+endclass
+
 // Please define a class called ld_op_t which extends ctr_op_t and which constrains the op to be "ld"
+class ld_op_t extends ctr_op_t;
+   constraint ld_only_c {op == ld;};
+endclass
 
 // Please define a class called small_data_t extends ctr_op_t and 
 // which constrains the data_t variable to be less than 8'd101
-
+class small_data_t extends ctr_op_t;
+      constraint ld_only_c {my_data < 8'd101;};
+endclass
 
 module top;
    ctr_op_t ctr_op;
@@ -40,6 +61,7 @@ module top;
          assert(ctr_op.randomize() 
                 // Please add a constraint using a "with" statement 
                 // that limts the op_t data member to be "inc" only
+                with {my_op == inc;}
                 );
          $display(ctr_op.convert2string);
       end
