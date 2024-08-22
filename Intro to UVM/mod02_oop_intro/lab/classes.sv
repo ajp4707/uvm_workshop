@@ -26,7 +26,8 @@ class ctr_op_t;
    
    function string convert2string;
       string s;
-      return $sformat(s, "data %2h  op: %3s", my_data, my_op);
+      $sformat(s, "data %2h  op: %3s", my_data, my_op);
+      return s;
    endfunction 
 
 endclass
